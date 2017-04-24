@@ -1,0 +1,8 @@
+{
+    "plugins": ["node", "promise"],
+    "extends": ["eslint:recommended", "plugin:promise/recommended", "plugin:node/recommended", "airbnb-base"],
+    "rules": {
+        "node/exports-style": ["error", "module.exports"],
+        "promise/no-callback-in-promise": "off"
+    }
+}
