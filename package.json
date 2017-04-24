@@ -25,6 +25,7 @@
     "morgan": "1.8.1",
     "mysql": "2.13.0",
     "nodemon": "1.11.0",
+    "pify": "2.3.0",
     "sequelize": "3.30.4",
     "winston": "2.3.1"
   },

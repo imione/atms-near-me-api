@@ -13,14 +13,14 @@ function getAtmsAroundMe(req, res, next) {
   logger.debug('내 주변의 ATM정보 얻어오기');
 
   const myLocation = {
-    myLat: req.query.lat,
-    myLng: req.query.lng,
+    lat: req.query.lat,
+    lng: req.query.lng,
     range: req.query.range,
   };
   Promise.resolve(myLocation)
     .then(() => {
       logger.debug('내 주변의 ATM 모두 조회');
-      return models.atms.findAllAtmsInRange(myLocation.range);
+      return models.atms.findAllAtmsInRange(myLocation);
     })
     .then((atmList) => {
       logger.debug('내 주변의 ATM 모두 조회 성공');
