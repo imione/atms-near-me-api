@@ -1,4 +1,3 @@
-require('dotenv-safe').load();
 const core = require('./app/core');
 
 core.database.connect()
